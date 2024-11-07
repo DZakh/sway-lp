@@ -41,3 +41,7 @@ pnpm dev
 ```
 
 For a thorough understanding and to dive deeper into each feature, refer to the original [documentation website](https://docs.envio.dev/).
+
+## Hosted Service
+
+https://envio.dev/app
