@@ -1,0 +1,12 @@
+type Pool {
+  id: ID!
+  balance: BigInt!
+  createdAt: Timestamp!
+}
+
+type PoolHistory {
+  id: ID!
+  pool: Pool! @index
+  balance: BigInt!
+  time: Timestamp!
+}

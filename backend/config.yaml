@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=./node_modules/envio/fuel.schema.json
+name: backend
+ecosystem: fuel
+networks:
+  - id: 0
+    start_block: 14500000
+    contracts:
+      - name: PoolContract
+        address:
+          - 0x543d1244c89366fc1b51fce3f116e7cce5a0ce4fff9f4b4e364ae3f3b388a8da
+        abi_file_path: abis/pool-abi.json
+        handler: src/EventHandlers.ts
+        events:
+          - name: DepositEvent
+            logId: "5528996047966410369"
+          - name: Transfer
